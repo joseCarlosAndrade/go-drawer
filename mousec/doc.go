@@ -1,7 +1,7 @@
 
 
 /*
-# Examples
+# Examples mouse
 
 robotgo.MouseSleep = 100
 
