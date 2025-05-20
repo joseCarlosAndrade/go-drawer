@@ -2,7 +2,11 @@ module github.com/joseCarlosAndrade/go-drawer
 
 go 1.21.4
 
-require github.com/go-vgo/robotgo v0.110.2
+require (
+	github.com/go-vgo/robotgo v0.110.2
+	github.com/vcaesar/imgo v0.40.2
+	go.uber.org/zap v1.27.0
+)
 
 require (
 	github.com/dblohm7/wingoes v0.0.0-20231019175336-f6e33aa7cc34 // indirect
@@ -23,10 +27,10 @@ require (
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/vcaesar/gops v0.40.0 // indirect
-	github.com/vcaesar/imgo v0.40.2 // indirect
 	github.com/vcaesar/keycode v0.10.1 // indirect
 	github.com/vcaesar/tt v0.20.1 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
+	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/image v0.18.0 // indirect
 	golang.org/x/net v0.27.0 // indirect
 	golang.org/x/sys v0.22.0 // indirect

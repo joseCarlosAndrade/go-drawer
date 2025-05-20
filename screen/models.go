@@ -1,5 +1,13 @@
-package imageproc
+package screen
 
+type Point struct {
+	X, Y int
+}
+
+type ScreenSection struct {
+	UpperLeft, LowerRight Point
+	Width, Height int
+}
 
 //  Errors
 
