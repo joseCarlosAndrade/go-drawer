@@ -10,10 +10,7 @@ import (
 	"strings"
 
 	"github.com/joseCarlosAndrade/go-drawer/app"
-	// "github.com/joseCarlosAndrade/go-drawer/imageproc"
-	// "github.com/joseCarlosAndrade/go-drawer/screen"
 
-	// "github.com/joseCarlosAndrade/go-drawer/mousec"
 	"go.uber.org/zap"
 )
 

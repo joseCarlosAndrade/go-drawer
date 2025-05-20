@@ -3,7 +3,9 @@ package screen
 // this pkg will handle screen interaction (mouse, screenshots, etc)
 
 import (
+	"fmt"
 	"image"
+	"os"
 
 	"github.com/go-vgo/robotgo"
 	"go.uber.org/zap"
@@ -49,4 +51,21 @@ func CaptureScreenSection(section ScreenSection) (image.Image, error) {
 
 	return img, nil
 }
+
+// get keyboard input
+func WaitForKeyboardInput() {
+	
+	// read the keyboard input
+	var v string
+	fmt.Scanln(&v)
+
+	// zap.L().Info("Keyboard input: ", zap.String("v", string(v)))
+
+	if len(v) > 0 && v[0] == 'q' {
+		zap.L().Info("q detected. Exiting...")
+		os.Exit(0)
+	}
+
+}
+
 

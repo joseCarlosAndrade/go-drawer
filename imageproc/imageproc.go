@@ -21,8 +21,16 @@ func SaveImageToJpeg(img image.Image, path string) error {
 		return err
 	}
 
-	fmt.Println("image saved as '", path, "'")
 	return nil
+}
+
+// loads an image from the path
+func LoadImage(path string) (image.Image, error) {
+	img, err := imgo.Read(path)
+	if err != nil {
+		return nil, err
+	}
+	return img, nil
 }
 
 func ResizeImage(img image.Image, height, width int) (image.Image, error) {
@@ -34,7 +42,7 @@ func ResizeImage(img image.Image, height, width int) (image.Image, error) {
 	return img, nil
 }
 
-// func 
+// func to print image info
 func ImageInfo(img image.Image) {
 	// fmt.Println(img)
 	zap.L().Info("img.Bounds(): ", zap.Any("bounds", img.Bounds()))
